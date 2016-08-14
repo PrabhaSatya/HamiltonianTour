@@ -1,0 +1,12 @@
+#ifndef DFS_H
+#define DFS_H
+#include "graph.h"
+struct adjvertex
+{	int vertexId;
+	struct adjvertex* next;
+};
+void DFS_visit(struct adjvertex** adjlist,char *color,int* prevertexId,int i);
+
+void DFS(struct adjvertex **adjlist,char *color,int *prevertexId);
+
+#endif

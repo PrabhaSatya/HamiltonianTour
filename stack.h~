@@ -1,0 +1,11 @@
+#ifndef STACK_H
+#define STACK_H
+
+int top;
+int *stack;
+void push(int item);
+int pop();
+int checkduplicate(int a);
+
+
+#endif

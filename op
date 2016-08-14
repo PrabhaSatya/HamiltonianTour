@@ -1,0 +1,744 @@
+
+Number of vertices: 14 
+
+Printing edges array... 
+
+ 
+Edges array: 
+v9 v10 9
+v7 v11 30
+v10 v11 10
+v8 v12 30
+v10 v12 11
+v6 v13 30
+v12 v13 12
+v7 v14 30
+v3 v14 30
+v12 v14 13
+v1 v2 1
+v2 v3 2
+v1 v4 30
+v2 v4 3
+v4 v5 4
+v5 v6 5
+v5 v7 6
+v1 v8 7
+v8 v9 8
+Printing done! 
+
+
+Weight of type B edges: 24
+No. of type A vertices : 14
+No. of vertices left: 0
+
+Printing vertices array after adding type B vertices: 
+Vertex 0: v1
+Vertex 1: v2
+Vertex 2: v3
+Vertex 3: v4
+Vertex 4: v5
+Vertex 5: v6
+Vertex 6: v7
+Vertex 7: v8
+Vertex 8: v9
+Vertex 9: v10
+Vertex 10: v11
+Vertex 11: v12
+Vertex 12: v13
+Vertex 13: v14
+
+Inserting Type B vertices in vertex hash tables... 
+
+Printing vertex hash table: 
+9  v10
+10  v11
+11  v12
+12  v13
+13  v14
+0  v1
+1  v2
+2  v3
+3  v4
+4  v5
+5  v6
+6  v7
+7  v8
+8  v9
+
+Printing edge hash table: 
+v9  v10  9
+v7  v11  30
+v10  v11  10
+v8  v12  30
+v10  v12  11
+v6  v13  30
+v12  v13  12
+v7  v14  30
+v3  v14  30
+v12  v14  13
+v1  v2  1
+v2  v3  2
+v1  v4  30
+v2  v4  3
+v4  v5  4
+v5  v6  5
+v5  v7  6
+v1  v8  7
+v8  v9  8
+
+Numedges: 19
+Heapsort done!
+
+Printing sorted edges from heapsort: 
+numEdges: 19
+v1 	 v2 	1
+v2 	 v3 	2
+v2 	 v4 	3
+v4 	 v5 	4
+v5 	 v6 	5
+v5 	 v7 	6
+v1 	 v8 	7
+v8 	 v9 	8
+v9 	 v10 	9
+v10 	 v11 	10
+v10 	 v12 	11
+v12 	 v13 	12
+v12 	 v14 	13
+v7 	 v14 	30
+v1 	 v4 	30
+v8 	 v12 	30
+v6 	 v13 	30
+v3 	 v14 	30
+v7 	 v11 	30
+
+These vertices cannot form a triangle: 
+v1 v2 v3
+
+Triangle inequality not satisfied.
+
+...............spanning tree edges................
+Minimum Spanning Tree  constructed
+v1 	v2 	1 
+v2 	v3 	2 
+v2 	v4 	3 
+v4 	v5 	4 
+v5 	v6 	5 
+v5 	v7 	6 
+v1 	v8 	7 
+v8 	v9 	8 
+v9 	v10 	9 
+v10 	v11 	10 
+v10 	v12 	11 
+v12 	v13 	12 
+v12 	v14 	13 
+cost of the spanning tree is 91
+number of excluded edges:6
+excludededges are:
+v7 	v14 	30 
+v1 	v4 	30 
+v8 	v12 	30 
+v6 	v13 	30 
+v3 	v14 	30 
+v7 	v11 	30 
+
+
+DFS Traversal of Type A
+
+v1
+v2
+v3
+v8
+v9
+v10
+v11
+v4
+v5
+v6
+v7
+v12
+v13
+v14
+
+
+predecessor of v2 is v1	
+predecessor of v3 is v2	
+predecessor of v5 is v4	
+predecessor of v6 is v5	
+predecessor of v8 is v1	
+predecessor of v9 is v8	
+predecessor of v10 is v9	
+predecessor of v11 is v10	
+predecessor of v13 is v12	
+DFSA tour
+
+v1 	
+v2 	
+v3 	
+v8 	
+v9 	
+v10 	
+v11 	
+v4 	
+v5 	
+v6 	
+v7 	
+v12 	
+v13 	
+v14 	cost of dfs tour:195
+entered arr2ds and printing from arr2ds
+ 
+0  
+1  
+2  
+7  
+8  
+9  
+10  
+3  
+4  
+5  
+6  
+11  
+12  
+13 0
+1
+2
+7
+8
+9
+10
+3
+4
+5
+6
+11
+12
+13
+
+
+...............neighbors of vertices in the tour................
+v1	v14	v2
+
+v2	v1	v3
+
+v3	v2	v8
+
+v4	v11	v5
+
+v5	v4	v6
+
+v6	v5	v7
+
+v7	v6	v12
+
+v8	v3	v9
+
+v9	v8	v10
+
+v10	v9	v11
+
+v11	v10	v4
+
+v12	v7	v13
+
+v13	v12	v14
+
+v14	v13	v1
+
+
+...............edges  in the tour................
+v1	v2	1
+
+v2	v3	2
+
+v3	v8	24
+
+v8	v9	8
+
+v9	v10	9
+
+v10	v11	10
+
+v11	v4	24
+
+v4	v5	4
+
+v5	v6	5
+
+v6	v7	24
+
+v7	v12	24
+
+v12	v13	12
+
+v13	v14	24
+
+v14	v1	24
+v1	v2	1	v3	v8	24	v1	v3	24	v2	v8	24
+v1	v2	1	v4	v5	4	v1	v4	30	v2	v5	24
+v1	v2	1	v5	v6	5	v1	v5	24	v2	v6	24
+v1	v2	1	v6	v7	24	v1	v6	24	v2	v7	24
+v1	v2	1	v7	v12	24	v1	v7	24	v2	v12	24
+v1	v2	1	v8	v9	8	v1	v8	7	v2	v9	24
+v1	v2	1	v9	v10	9	v1	v9	24	v2	v10	24
+v1	v2	1	v10	v11	10	v1	v10	24	v2	v11	24
+v1	v2	1	v11	v4	24	v1	v11	24	v2	v4	3
+v1	v2	1	v12	v13	12	v1	v12	24	v2	v13	24
+v1	v2	1	v13	v14	24	v1	v13	24	v2	v14	24
+v2	v3	2	v4	v5	4	v2	v4	3	v3	v5	24
+v2	v3	2	v5	v6	5	v2	v5	24	v3	v6	24
+v2	v3	2	v6	v7	24	v2	v6	24	v3	v7	24
+v2	v3	2	v7	v12	24	v2	v7	24	v3	v12	24
+v2	v3	2	v8	v9	8	v2	v8	24	v3	v9	24
+v2	v3	2	v9	v10	9	v2	v9	24	v3	v10	24
+v2	v3	2	v10	v11	10	v2	v10	24	v3	v11	24
+v2	v3	2	v11	v4	24	v2	v11	24	v3	v4	24
+v2	v3	2	v12	v13	12	v2	v12	24	v3	v13	24
+v2	v3	2	v13	v14	24	v2	v13	24	v3	v14	30
+v2	v3	2	v14	v1	24	v2	v14	24	v3	v1	24
+v3	v8	24	v1	v2	1	v3	v1	24	v8	v2	24
+v3	v8	24	v4	v5	4	v3	v4	24	v8	v5	24
+v3	v8	24	v5	v6	5	v3	v5	24	v8	v6	24
+v3	v8	24	v6	v7	24	v3	v6	24	v8	v7	24
+v3	v8	24	v7	v12	24	v3	v7	24	v8	v12	30
+yes
+v1	v14	v2
+
+v2	v1	v3
+
+v3	v2	v7
+
+v4	v5	v11
+
+v5	v6	v4
+
+v6	v7	v5
+
+v7	v3	v6
+
+v8	v9	v12
+
+v9	v10	v8
+
+v10	v11	v9
+
+v11	v4	v10
+
+v12	v8	v13
+
+v13	v12	v14
+
+v14	v13	v1
+yesv4	v11	24	v1	v2	1	v4	v1	30	v11	v2	24
+v4	v11	24	v2	v3	2	v4	v2	3	v11	v3	24
+v4	v11	24	v3	v7	24	v4	v3	24	v11	v7	30
+yes
+v1	v2	v14
+
+v2	v3	v1
+
+v3	v4	v2
+
+v4	v5	v3
+
+v5	v6	v4
+
+v6	v7	v5
+
+v7	v11	v6
+
+v8	v12	v9
+
+v9	v8	v10
+
+v10	v9	v11
+
+v11	v10	v7
+
+v12	v13	v8
+
+v13	v14	v12
+
+v14	v1	v13
+yesv5	v4	4	v1	v14	24	v5	v1	24	v4	v14	24
+v5	v4	4	v2	v1	1	v5	v2	24	v4	v1	30
+v5	v4	4	v3	v2	2	v5	v3	24	v4	v2	3
+v5	v4	4	v7	v6	24	v5	v7	6	v4	v6	24
+v5	v4	4	v8	v9	8	v5	v8	24	v4	v9	24
+v5	v4	4	v9	v10	9	v5	v9	24	v4	v10	24
+v5	v4	4	v10	v11	10	v5	v10	24	v4	v11	24
+v5	v4	4	v11	v7	30	v5	v11	24	v4	v7	24
+v5	v4	4	v12	v8	30	v5	v12	24	v4	v8	24
+v5	v4	4	v13	v12	12	v5	v13	24	v4	v12	24
+v5	v4	4	v14	v13	24	v5	v14	24	v4	v13	24
+v6	v5	5	v1	v14	24	v6	v1	24	v5	v14	24
+v6	v5	5	v2	v1	1	v6	v2	24	v5	v1	24
+v6	v5	5	v3	v2	2	v6	v3	24	v5	v2	24
+v6	v5	5	v4	v3	24	v6	v4	24	v5	v3	24
+v6	v5	5	v8	v9	8	v6	v8	24	v5	v9	24
+v6	v5	5	v9	v10	9	v6	v9	24	v5	v10	24
+v6	v5	5	v10	v11	10	v6	v10	24	v5	v11	24
+v6	v5	5	v11	v7	30	v6	v11	24	v5	v7	6
+v6	v5	5	v12	v8	30	v6	v12	24	v5	v8	24
+v6	v5	5	v13	v12	12	v6	v13	30	v5	v12	24
+v6	v5	5	v14	v13	24	v6	v14	24	v5	v13	24
+v7	v6	24	v1	v14	24	v7	v1	24	v6	v14	24
+v7	v6	24	v2	v1	1	v7	v2	24	v6	v1	24
+v7	v6	24	v3	v2	2	v7	v3	24	v6	v2	24
+v7	v6	24	v4	v3	24	v7	v4	24	v6	v3	24
+v7	v6	24	v5	v4	4	v7	v5	6	v6	v4	24
+v7	v6	24	v8	v9	8	v7	v8	24	v6	v9	24
+v7	v6	24	v9	v10	9	v7	v9	24	v6	v10	24
+v7	v6	24	v10	v11	10	v7	v10	24	v6	v11	24
+v7	v6	24	v12	v8	30	v7	v12	24	v6	v8	24
+v7	v6	24	v13	v12	12	v7	v13	24	v6	v12	24
+v7	v6	24	v14	v13	24	v7	v14	30	v6	v13	30
+yes
+v1	v14	v2
+
+v2	v1	v3
+
+v3	v2	v4
+
+v4	v3	v5
+
+v5	v4	v6
+
+v6	v5	v13
+
+v7	v11	v14
+
+v8	v12	v9
+
+v9	v8	v10
+
+v10	v9	v11
+
+v11	v10	v7
+
+v12	v13	v8
+
+v13	v6	v12
+
+v14	v7	v1
+yesv8	v9	8	v1	v2	1	v8	v1	7	v9	v2	24
+v8	v9	8	v2	v3	2	v8	v2	24	v9	v3	24
+v8	v9	8	v3	v4	24	v8	v3	24	v9	v4	24
+v8	v9	8	v4	v5	4	v8	v4	24	v9	v5	24
+v8	v9	8	v5	v6	5	v8	v5	24	v9	v6	24
+v8	v9	8	v6	v13	30	v8	v6	24	v9	v13	24
+v8	v9	8	v7	v14	30	v8	v7	24	v9	v14	24
+v8	v9	8	v10	v11	10	v8	v10	24	v9	v11	24
+v8	v9	8	v11	v7	30	v8	v11	24	v9	v7	24
+v8	v9	8	v13	v12	12	v8	v13	24	v9	v12	24
+v8	v9	8	v14	v1	24	v8	v14	24	v9	v1	24
+v9	v10	9	v1	v2	1	v9	v1	24	v10	v2	24
+v9	v10	9	v2	v3	2	v9	v2	24	v10	v3	24
+v9	v10	9	v3	v4	24	v9	v3	24	v10	v4	24
+v9	v10	9	v4	v5	4	v9	v4	24	v10	v5	24
+v9	v10	9	v5	v6	5	v9	v5	24	v10	v6	24
+v9	v10	9	v6	v13	30	v9	v6	24	v10	v13	24
+v9	v10	9	v7	v14	30	v9	v7	24	v10	v14	24
+v9	v10	9	v11	v7	30	v9	v11	24	v10	v7	24
+v9	v10	9	v12	v8	30	v9	v12	24	v10	v8	24
+v9	v10	9	v13	v12	12	v9	v13	24	v10	v12	11
+v9	v10	9	v14	v1	24	v9	v14	24	v10	v1	24
+v10	v11	10	v1	v2	1	v10	v1	24	v11	v2	24
+v10	v11	10	v2	v3	2	v10	v2	24	v11	v3	24
+v10	v11	10	v3	v4	24	v10	v3	24	v11	v4	24
+v10	v11	10	v4	v5	4	v10	v4	24	v11	v5	24
+v10	v11	10	v5	v6	5	v10	v5	24	v11	v6	24
+v10	v11	10	v6	v13	30	v10	v6	24	v11	v13	24
+v10	v11	10	v7	v14	30	v10	v7	24	v11	v14	24
+v10	v11	10	v8	v9	8	v10	v8	24	v11	v9	24
+v10	v11	10	v12	v8	30	v10	v12	11	v11	v8	24
+v10	v11	10	v13	v12	12	v10	v13	24	v11	v12	24
+v10	v11	10	v14	v1	24	v10	v14	24	v11	v1	24
+v11	v7	30	v1	v2	1	v11	v1	24	v7	v2	24
+v11	v7	30	v2	v3	2	v11	v2	24	v7	v3	24
+v11	v7	30	v3	v4	24	v11	v3	24	v7	v4	24
+v11	v7	30	v4	v5	4	v11	v4	24	v7	v5	6
+v11	v7	30	v5	v6	5	v11	v5	24	v7	v6	24
+v11	v7	30	v6	v13	30	v11	v6	24	v7	v13	24
+v11	v7	30	v8	v9	8	v11	v8	24	v7	v9	24
+v11	v7	30	v9	v10	9	v11	v9	24	v7	v10	24
+v11	v7	30	v12	v8	30	v11	v12	24	v7	v8	24
+v11	v7	30	v13	v12	12	v11	v13	24	v7	v12	24
+v11	v7	30	v14	v1	24	v11	v14	24	v7	v1	24
+v12	v8	30	v1	v2	1	v12	v1	24	v8	v2	24
+v12	v8	30	v2	v3	2	v12	v2	24	v8	v3	24
+v12	v8	30	v3	v4	24	v12	v3	24	v8	v4	24
+v12	v8	30	v4	v5	4	v12	v4	24	v8	v5	24
+v12	v8	30	v5	v6	5	v12	v5	24	v8	v6	24
+v12	v8	30	v6	v13	30	v12	v6	24	v8	v13	24
+v12	v8	30	v7	v14	30	v12	v7	24	v8	v14	24
+v12	v8	30	v9	v10	9	v12	v9	24	v8	v10	24
+v12	v8	30	v10	v11	10	v12	v10	11	v8	v11	24
+v12	v8	30	v11	v7	30	v12	v11	24	v8	v7	24
+v12	v8	30	v14	v1	24	v12	v14	13	v8	v1	7
+yes
+v1	v8	v2
+
+v2	v1	v3
+
+v3	v2	v4
+
+v4	v3	v5
+
+v5	v4	v6
+
+v6	v5	v13
+
+v7	v14	v11
+
+v8	v9	v1
+
+v9	v10	v8
+
+v10	v11	v9
+
+v11	v7	v10
+
+v12	v13	v14
+
+v13	v6	v12
+
+v14	v12	v7
+yesv13	v12	12	v1	v2	1	v13	v1	24	v12	v2	24
+v13	v12	12	v2	v3	2	v13	v2	24	v12	v3	24
+v13	v12	12	v3	v4	24	v13	v3	24	v12	v4	24
+v13	v12	12	v4	v5	4	v13	v4	24	v12	v5	24
+v13	v12	12	v5	v6	5	v13	v5	24	v12	v6	24
+v13	v12	12	v7	v11	30	v13	v7	24	v12	v11	24
+v13	v12	12	v8	v1	7	v13	v8	24	v12	v1	24
+v13	v12	12	v9	v8	8	v13	v9	24	v12	v8	30
+v13	v12	12	v10	v9	9	v13	v10	24	v12	v9	24
+v13	v12	12	v11	v10	10	v13	v11	24	v12	v10	11
+v13	v12	12	v14	v7	30	v13	v14	24	v12	v7	24
+v14	v7	30	v1	v2	1	v14	v1	24	v7	v2	24
+v14	v7	30	v2	v3	2	v14	v2	24	v7	v3	24
+v14	v7	30	v3	v4	24	v14	v3	30	v7	v4	24
+v14	v7	30	v4	v5	4	v14	v4	24	v7	v5	6
+v14	v7	30	v5	v6	5	v14	v5	24	v7	v6	24
+v14	v7	30	v6	v13	30	v14	v6	24	v7	v13	24
+v14	v7	30	v8	v1	7	v14	v8	24	v7	v1	24
+v14	v7	30	v9	v8	8	v14	v9	24	v7	v8	24
+v14	v7	30	v10	v9	9	v14	v10	24	v7	v9	24
+v14	v7	30	v11	v10	10	v14	v11	24	v7	v10	24
+v14	v7	30	v13	v12	12	v14	v13	24	v7	v12	24
+now optimising...
+v1	v2	1	v3	v4	24	v1	v3	24	v2	v4	3
+v1	v2	1	v4	v5	4	v1	v4	30	v2	v5	24
+v1	v2	1	v5	v6	5	v1	v5	24	v2	v6	24
+v1	v2	1	v6	v13	30	v1	v6	24	v2	v13	24
+v1	v2	1	v7	v11	30	v1	v7	24	v2	v11	24
+v1	v2	1	v9	v8	8	v1	v9	24	v2	v8	24
+v1	v2	1	v10	v9	9	v1	v10	24	v2	v9	24
+v1	v2	1	v11	v10	10	v1	v11	24	v2	v10	24
+v1	v2	1	v12	v14	13	v1	v12	24	v2	v14	24
+v1	v2	1	v13	v12	12	v1	v13	24	v2	v12	24
+v1	v2	1	v14	v7	30	v1	v14	24	v2	v7	24
+v2	v3	2	v4	v5	4	v2	v4	3	v3	v5	24
+v2	v3	2	v5	v6	5	v2	v5	24	v3	v6	24
+v2	v3	2	v6	v13	30	v2	v6	24	v3	v13	24
+v2	v3	2	v7	v11	30	v2	v7	24	v3	v11	24
+v2	v3	2	v8	v1	7	v2	v8	24	v3	v1	24
+v2	v3	2	v9	v8	8	v2	v9	24	v3	v8	24
+v2	v3	2	v10	v9	9	v2	v10	24	v3	v9	24
+v2	v3	2	v11	v10	10	v2	v11	24	v3	v10	24
+v2	v3	2	v12	v14	13	v2	v12	24	v3	v14	30
+v2	v3	2	v13	v12	12	v2	v13	24	v3	v12	24
+v2	v3	2	v14	v7	30	v2	v14	24	v3	v7	24
+v3	v4	24	v1	v2	1	v3	v1	24	v4	v2	3
+v3	v4	24	v5	v6	5	v3	v5	24	v4	v6	24
+v3	v4	24	v6	v13	30	v3	v6	24	v4	v13	24
+v3	v4	24	v7	v11	30	v3	v7	24	v4	v11	24
+v3	v4	24	v8	v1	7	v3	v8	24	v4	v1	30
+v3	v4	24	v9	v8	8	v3	v9	24	v4	v8	24
+v3	v4	24	v10	v9	9	v3	v10	24	v4	v9	24
+v3	v4	24	v11	v10	10	v3	v11	24	v4	v10	24
+v3	v4	24	v12	v14	13	v3	v12	24	v4	v14	24
+v3	v4	24	v13	v12	12	v3	v13	24	v4	v12	24
+v3	v4	24	v14	v7	30	v3	v14	30	v4	v7	24
+v4	v5	4	v1	v2	1	v4	v1	30	v5	v2	24
+v4	v5	4	v2	v3	2	v4	v2	3	v5	v3	24
+v4	v5	4	v6	v13	30	v4	v6	24	v5	v13	24
+v4	v5	4	v7	v11	30	v4	v7	24	v5	v11	24
+v4	v5	4	v8	v1	7	v4	v8	24	v5	v1	24
+v4	v5	4	v9	v8	8	v4	v9	24	v5	v8	24
+v4	v5	4	v10	v9	9	v4	v10	24	v5	v9	24
+v4	v5	4	v11	v10	10	v4	v11	24	v5	v10	24
+v4	v5	4	v12	v14	13	v4	v12	24	v5	v14	24
+v4	v5	4	v13	v12	12	v4	v13	24	v5	v12	24
+v4	v5	4	v14	v7	30	v4	v14	24	v5	v7	6
+v5	v6	5	v1	v2	1	v5	v1	24	v6	v2	24
+v5	v6	5	v2	v3	2	v5	v2	24	v6	v3	24
+v5	v6	5	v3	v4	24	v5	v3	24	v6	v4	24
+v5	v6	5	v7	v11	30	v5	v7	6	v6	v11	24
+v5	v6	5	v8	v1	7	v5	v8	24	v6	v1	24
+v5	v6	5	v9	v8	8	v5	v9	24	v6	v8	24
+v5	v6	5	v10	v9	9	v5	v10	24	v6	v9	24
+v5	v6	5	v11	v10	10	v5	v11	24	v6	v10	24
+v5	v6	5	v12	v14	13	v5	v12	24	v6	v14	24
+v5	v6	5	v13	v12	12	v5	v13	24	v6	v12	24
+v5	v6	5	v14	v7	30	v5	v14	24	v6	v7	24
+v6	v13	30	v1	v2	1	v6	v1	24	v13	v2	24
+v6	v13	30	v2	v3	2	v6	v2	24	v13	v3	24
+v6	v13	30	v3	v4	24	v6	v3	24	v13	v4	24
+v6	v13	30	v4	v5	4	v6	v4	24	v13	v5	24
+v6	v13	30	v7	v11	30	v6	v7	24	v13	v11	24
+v6	v13	30	v8	v1	7	v6	v8	24	v13	v1	24
+v6	v13	30	v9	v8	8	v6	v9	24	v13	v8	24
+v6	v13	30	v10	v9	9	v6	v10	24	v13	v9	24
+v6	v13	30	v11	v10	10	v6	v11	24	v13	v10	24
+v6	v13	30	v12	v14	13	v6	v12	24	v13	v14	24
+v6	v13	30	v14	v7	30	v6	v14	24	v13	v7	24
+v7	v11	30	v1	v2	1	v7	v1	24	v11	v2	24
+v7	v11	30	v2	v3	2	v7	v2	24	v11	v3	24
+v7	v11	30	v3	v4	24	v7	v3	24	v11	v4	24
+v7	v11	30	v4	v5	4	v7	v4	24	v11	v5	24
+v7	v11	30	v5	v6	5	v7	v5	6	v11	v6	24
+v7	v11	30	v6	v13	30	v7	v6	24	v11	v13	24
+v7	v11	30	v8	v1	7	v7	v8	24	v11	v1	24
+v7	v11	30	v9	v8	8	v7	v9	24	v11	v8	24
+v7	v11	30	v10	v9	9	v7	v10	24	v11	v9	24
+v7	v11	30	v12	v14	13	v7	v12	24	v11	v14	24
+v7	v11	30	v13	v12	12	v7	v13	24	v11	v12	24
+v8	v1	7	v2	v3	2	v8	v2	24	v1	v3	24
+v8	v1	7	v3	v4	24	v8	v3	24	v1	v4	30
+v8	v1	7	v4	v5	4	v8	v4	24	v1	v5	24
+v8	v1	7	v5	v6	5	v8	v5	24	v1	v6	24
+v8	v1	7	v6	v13	30	v8	v6	24	v1	v13	24
+v8	v1	7	v7	v11	30	v8	v7	24	v1	v11	24
+v8	v1	7	v10	v9	9	v8	v10	24	v1	v9	24
+v8	v1	7	v11	v10	10	v8	v11	24	v1	v10	24
+v8	v1	7	v12	v14	13	v8	v12	30	v1	v14	24
+v8	v1	7	v13	v12	12	v8	v13	24	v1	v12	24
+v8	v1	7	v14	v7	30	v8	v14	24	v1	v7	24
+v9	v8	8	v1	v2	1	v9	v1	24	v8	v2	24
+v9	v8	8	v2	v3	2	v9	v2	24	v8	v3	24
+v9	v8	8	v3	v4	24	v9	v3	24	v8	v4	24
+v9	v8	8	v4	v5	4	v9	v4	24	v8	v5	24
+v9	v8	8	v5	v6	5	v9	v5	24	v8	v6	24
+v9	v8	8	v6	v13	30	v9	v6	24	v8	v13	24
+v9	v8	8	v7	v11	30	v9	v7	24	v8	v11	24
+v9	v8	8	v11	v10	10	v9	v11	24	v8	v10	24
+v9	v8	8	v12	v14	13	v9	v12	24	v8	v14	24
+v9	v8	8	v13	v12	12	v9	v13	24	v8	v12	30
+v9	v8	8	v14	v7	30	v9	v14	24	v8	v7	24
+v10	v9	9	v1	v2	1	v10	v1	24	v9	v2	24
+v10	v9	9	v2	v3	2	v10	v2	24	v9	v3	24
+v10	v9	9	v3	v4	24	v10	v3	24	v9	v4	24
+v10	v9	9	v4	v5	4	v10	v4	24	v9	v5	24
+v10	v9	9	v5	v6	5	v10	v5	24	v9	v6	24
+v10	v9	9	v6	v13	30	v10	v6	24	v9	v13	24
+v10	v9	9	v7	v11	30	v10	v7	24	v9	v11	24
+v10	v9	9	v8	v1	7	v10	v8	24	v9	v1	24
+v10	v9	9	v12	v14	13	v10	v12	11	v9	v14	24
+v10	v9	9	v13	v12	12	v10	v13	24	v9	v12	24
+v10	v9	9	v14	v7	30	v10	v14	24	v9	v7	24
+v11	v10	10	v1	v2	1	v11	v1	24	v10	v2	24
+v11	v10	10	v2	v3	2	v11	v2	24	v10	v3	24
+v11	v10	10	v3	v4	24	v11	v3	24	v10	v4	24
+v11	v10	10	v4	v5	4	v11	v4	24	v10	v5	24
+v11	v10	10	v5	v6	5	v11	v5	24	v10	v6	24
+v11	v10	10	v6	v13	30	v11	v6	24	v10	v13	24
+v11	v10	10	v8	v1	7	v11	v8	24	v10	v1	24
+v11	v10	10	v9	v8	8	v11	v9	24	v10	v8	24
+v11	v10	10	v12	v14	13	v11	v12	24	v10	v14	24
+v11	v10	10	v13	v12	12	v11	v13	24	v10	v12	11
+v11	v10	10	v14	v7	30	v11	v14	24	v10	v7	24
+v12	v14	13	v1	v2	1	v12	v1	24	v14	v2	24
+v12	v14	13	v2	v3	2	v12	v2	24	v14	v3	30
+v12	v14	13	v3	v4	24	v12	v3	24	v14	v4	24
+v12	v14	13	v4	v5	4	v12	v4	24	v14	v5	24
+v12	v14	13	v5	v6	5	v12	v5	24	v14	v6	24
+v12	v14	13	v6	v13	30	v12	v6	24	v14	v13	24
+v12	v14	13	v7	v11	30	v12	v7	24	v14	v11	24
+v12	v14	13	v8	v1	7	v12	v8	30	v14	v1	24
+v12	v14	13	v9	v8	8	v12	v9	24	v14	v8	24
+v12	v14	13	v10	v9	9	v12	v10	11	v14	v9	24
+v12	v14	13	v11	v10	10	v12	v11	24	v14	v10	24
+v13	v12	12	v1	v2	1	v13	v1	24	v12	v2	24
+v13	v12	12	v2	v3	2	v13	v2	24	v12	v3	24
+v13	v12	12	v3	v4	24	v13	v3	24	v12	v4	24
+v13	v12	12	v4	v5	4	v13	v4	24	v12	v5	24
+v13	v12	12	v5	v6	5	v13	v5	24	v12	v6	24
+v13	v12	12	v7	v11	30	v13	v7	24	v12	v11	24
+v13	v12	12	v8	v1	7	v13	v8	24	v12	v1	24
+v13	v12	12	v9	v8	8	v13	v9	24	v12	v8	30
+v13	v12	12	v10	v9	9	v13	v10	24	v12	v9	24
+v13	v12	12	v11	v10	10	v13	v11	24	v12	v10	11
+v13	v12	12	v14	v7	30	v13	v14	24	v12	v7	24
+v14	v7	30	v1	v2	1	v14	v1	24	v7	v2	24
+v14	v7	30	v2	v3	2	v14	v2	24	v7	v3	24
+v14	v7	30	v3	v4	24	v14	v3	30	v7	v4	24
+v14	v7	30	v4	v5	4	v14	v4	24	v7	v5	6
+v14	v7	30	v5	v6	5	v14	v5	24	v7	v6	24
+v14	v7	30	v6	v13	30	v14	v6	24	v7	v13	24
+v14	v7	30	v8	v1	7	v14	v8	24	v7	v1	24
+v14	v7	30	v9	v8	8	v14	v9	24	v7	v8	24
+v14	v7	30	v10	v9	9	v14	v10	24	v7	v9	24
+v14	v7	30	v11	v10	10	v14	v11	24	v7	v10	24
+v14	v7	30	v13	v12	12	v14	v13	24	v7	v12	24
+
+
+...............neighbors of vertices in the tour................
+v1	v8	v2
+
+v2	v1	v3
+
+v3	v2	v4
+
+v4	v3	v5
+
+v5	v4	v6
+
+v6	v5	v13
+
+v7	v14	v11
+
+v8	v9	v1
+
+v9	v10	v8
+
+v10	v11	v9
+
+v11	v7	v10
+
+v12	v13	v14
+
+v13	v6	v12
+
+v14	v12	v7
+cost after 2opt:185......................adj acency list...........................
+ v1 :	 v2	 v8
+ v2 :	 v1	 v3
+ v3 :	 v2
+ v4 :	 v2	 v5
+ v5 :	 v4	 v6
+ v6 :	 v5
+ v7 :	 v5
+ v8 :	 v1	 v9
+ v9 :	 v8	 v10
+ v10 :	 v9	 v11
+ v11 :	 v10
+ v12 :	 v10	 v13
+ v13 :	 v12
+ v14 :	 v12count:14
+DFS traversal of Type B
+
+v1
+v14
+v8
+v4
+v2
+v13
+v12
+v11
+v10
+v9
+v7
+v6
+v5
+v3
